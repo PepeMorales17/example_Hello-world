@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var loQueDiga: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func nombre(sender: AnyObject) {
+        loQueDiga.text = "Mi nombre"
+    }
 
+    @IBAction func Apellido(sender: AnyObject) {
+        loQueDiga.text = "Mi apellido"
+    }
+    
+    @IBAction func pais(sender: AnyObject) {
+        loQueDiga.text = "Mi pais"
+    }
+    
+    @IBAction func ciudad(sender: AnyObject) {
+        loQueDiga.text = "Mi ciudad"
+    }
 }
 
